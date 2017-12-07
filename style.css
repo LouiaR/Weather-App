@@ -45,13 +45,23 @@ body{
        color: #fff;
        background: #5baee6;
        font-size: 120%;
+       
 }
 
 .search_button{
+    /* can this cursor: pointer property go into the styling which is already declared for class .search_button above? */
        cursor: pointer;
 }
 
+/*style added by prabesh */
 
+#display {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 50px;
+    
+}
 
 
 
