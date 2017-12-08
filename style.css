@@ -5,17 +5,33 @@
 }
 
 body{
-       background: linear-gradient(45deg, rgba(45, 159, 247, 0.59), rgba(71, 187, 247, 0.73)), url(http://amarillo.com/sites/default/files/14720645.jpg);
+       background: linear-gradient(45deg, rgba(45, 159, 247, 0.59), rgba(71, 187, 247, 0.73)),  url(http://amarillo.com/sites/default/files/14720645.jpg);
        background-size: cover;
-       background-position: center;
+/*       background-position: 0 -100% ;*/
        background-repeat: no-repeat;
        background-attachment: fixed;
-
        font-size: 18px;
+/*       animation:  slide 20s linear infinite ;*/
 }
 
+@-webkit-keyframes slide {
+       from { background-position: 100% 0; }
+       to { background-position: 100% 100% ; }
+}
 .container{
        width:100%;
+}
+
+#clockbox{
+       position: absolute;
+       top: 1.5%;
+       font-size: 120%;
+       left: 2%;
+       color: #fff;
+       padding: 2rem;
+       font-size: 150%;
+       font-weight: bold;
+       text-shadow: 2px 1px 2px rgba(43, 95, 128, 0.81);
 }
 
 .search{
@@ -51,6 +67,44 @@ body{
        cursor: pointer;
 }
 
+.curent-info{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 4%;
+       color: #fff;
+       text-transform: capitalize;
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       box-shadow: 0px 3px 19px 1px rgba(58, 158, 222, 0.58);
+       background: rgba(164, 215, 247, 0.18);
+       padding: 3rem;
+       border-radius: 30px;
+       display: none;
+}
+
+.curent-info p{
+       font-size: 120%;
+       font-weight: 700;
+       margin-top: 2%;
+}
+
+.city{
+       font-size: 220%;
+       text-transform: initial;
+}
+.city span{
+       font-size: 90%;
+}
+
+.current-temp{
+       font-size: 150%;
+       text-transform: initial
+}
+
+.max-min, .state{font-size: 140%;}
 
 
 
