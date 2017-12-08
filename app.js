@@ -14,7 +14,7 @@ window.onload=function(){
 }
 
 //var weatherData = 'http://api.openweathermap.org/data/2.5/forecast?q=mbanga&APPID=33fb7454eb75c6a062a86f7f0ee2695a ';
-const api = 'http://api.openweathermap.org/data/2.5/forecast?q='
+const api = 'https://api.openweathermap.org/data/2.5/forecast?q='
 const apiKey = '&APPID=33fb7454eb75c6a062a86f7f0ee2695a'
 const unit = '&units=metric'
 
